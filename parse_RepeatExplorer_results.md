@@ -66,9 +66,9 @@ To make it easier, put all input files and the python script in the same folder.
 
 Make a **tab delimited** table called "species_table.txt" (for instance) following this structure, and with the same headers:
 
-species	code	genome_size
-P_sobolifera	PSO	7.015
-P_brevipes	PBR	15.525
+species	code	genome_size    
+P_sobolifera	PSO	7.015    
+P_brevipes	PBR	15.525    
 
 ### Produce graphs
 See the R script and instructions in it.
