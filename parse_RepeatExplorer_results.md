@@ -35,7 +35,7 @@ The cluster tables have to be renamed this way (note the double underscore): **G
 - Save the "levels" sheet as "RE_parsing_test_levels.txt" (or any other name) in **tab delimited** format  
 
 ### Produce graphs
-See the R script and instructions in it.
+See the R script RE_summarize_results_individual_v2.R and instructions in it.
 
 
 ## **3. Parsing results from one comparative analysis**
@@ -71,4 +71,4 @@ P_sobolifera	PSO	7.015
 P_brevipes	PBR	15.525    
 
 ### Produce graphs
-See the R script and instructions in it.
+See the R script RE_summarize_results_comparative_v3.R and instructions in it.
