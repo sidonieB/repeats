@@ -2,10 +2,10 @@
 
 ## **1. Prerequisites**
 
-Results of RepeatExplorer analyses obtained from the version running on Galaxy
-python
-R
-basic unix knowledge
+- Results of RepeatExplorer analyses obtained from the version running on Galaxy  
+- python  
+- R (and basic knowlege of it if you want to customize the graphs)  
+- basic unix knowledge  
 
 ## **2. Parsing results from multiple individual analyses**
 
