@@ -35,7 +35,10 @@ The cluster tables have to be renamed this way (**note the double underscore bet
 - Save the "levels" sheet as "RE_output_individual_manually_edited_for_R.txt" (or any other name) in **tab delimited** format  
 
 ### Produce graphs
-See the R script RE_summarize_results_individual_v2.R and instructions in it.
+The R script will use the results table (for instance RE_output_individual_manually_edited_for_R.txt) and the species table (for instance species_table_individual_produced_by_python_for_R.txt) to produce new tables (for instance percent_clean.txt and bp_clean.txt).  
+Then it will use these new tables to produce graphs.  
+This means that you can save the last tables and come back later to do different graphs.  
+See the R script RE_summarize_results_individual_v2.R and instructions in it, and don't hesitate to ask me!  
 
 
 ## **3. Parsing results from one comparative analysis**
@@ -59,10 +62,10 @@ To make it easier, put all input files and the python script in the same folder.
 - Remove all columns after the "Supercluster_best_hit" column  
 - Use the "text to columns" function to split the "Supercluster_best_hit" column using "/" as a delimiter  
 - Relabel the "Supercluster_best_hit" column as "Supercluster_best_hit_lev1" column, and label all newly created columns as "Supercluster_best_hit_lev2", "Supercluster_best_hit_lev3", ... (use these exact names!)  
-- Save the whole workbook as "RE_parsing_test.xls" (or any other name)    
-- Save the "levels" sheet as "RE_parsing_test_levels.txt" (or any other name) in **tab delimited** format  
+- Save the whole workbook as "RE_output_comparative_manually_edited.xls" (or any other name)    
+- Save the "levels" sheet as "RE_output_comparative_manually_edited_for_R.txt" (or any other name) in **tab delimited** format  
 
-### Make a table with species information
+### Manually make a table with species information for R
 
 Make a **tab delimited** table called "species_table.txt" (for instance) following this structure, and with the same headers:
 
@@ -71,4 +74,8 @@ P_sobolifera	PSO	7.015
 P_brevipes	PBR	15.525    
 
 ### Produce graphs
-See the R script RE_summarize_results_comparative_v3.R and instructions in it.
+The R script will use the results table (for instance RE_output_comparative_manually_edited_for_R.txt) and the species table (for instance species_table.txt) to produce new tables (for instance percent_clean.txt and bp_clean.txt).  
+Then it will use these new tables to produce graphs.  
+This means that you can save the last tables and come back later to do different graphs.  
+The R script also contains additional parts at the end to make different kinds of graphs. See the instructions in the script to know what table to provide as input. Sometimes you will need to make a new table starting from the percent_clean.txt and bp_clean.txt tables. But this is much easier than to start from scratch.  
+See the R script RE_summarize_results_comparative_v3.R and instructions in it, and don't hesitate to ask me!
