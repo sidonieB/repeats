@@ -31,8 +31,8 @@ The cluster tables have to be renamed this way (note the double underscore): **G
 - Remove all columns after the "Supercluster_best_hit" column  
 - Use the "text to columns" function to split the "Supercluster_best_hit" column using "/" as a delimiter  
 - Relabel the "Supercluster_best_hit" column as "Supercluster_best_hit_lev1" column, and label all newly created columns as "Supercluster_best_hit_lev2", "Supercluster_best_hit_lev3", ... (use these exact names!)
-- Save the whole workbook as "RE_parsing_test.xls" (or any other name)  
-- Save the "levels" sheet as "RE_parsing_test_levels.txt" (or any other name) in **tab delimited** format  
+- Save the whole workbook as "RE_output_individual_manually_edited.xls" (or any other name)  
+- Save the "levels" sheet as "RE_output_individual_manually_edited_for_R.txt" (or any other name) in **tab delimited** format  
 
 ### Produce graphs
 See the R script RE_summarize_results_individual_v2.R and instructions in it.
