@@ -17,7 +17,7 @@ python RE_output-parsing_individual.py input-directory-name output-name species_
 ```
 To make it easier, put the input directory and the python script in a same directory.  
 **input-directory-name** is the directory with the cluster tables of all species. DO NOT put anything else in this directory!  
-The cluster tables have to be renamed this way (note the double underscore): **Genus_species__ReadsNumber_GenomeSize_CLUSTER_TABLE.csv**  
+The cluster tables have to be renamed this way (**note the double underscore between species and read number!**): **Genus_species__ReadsNumber_GenomeSize_CLUSTER_TABLE.csv**  
 **output-name** is the name you want to give to the file where all results will be reported, for instance RE_output_individual.txt  
 **species_table_output_name** is the name you want to give to the file where the script will make a species table with genome sizes and read numbers (useful for R later), for instance species_table_individual.txt  
 **t** is the threshold to keep a second hit in the table: we keep the hit if its score is at least t times as high as the score of the first hit. t can be between 0 and 1 (see inside script for details)  
